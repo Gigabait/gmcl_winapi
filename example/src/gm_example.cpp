@@ -14,7 +14,6 @@ int LuaMessageBox( lua_State* state )
 {
 	if (LUA->IsType(1, Type::STRING) && LUA->IsType(2, Type::STRING) && LUA->IsType(3, Type::NUMBER))
 	{
-		char strOut[512];
 		const char *Message = LUA->GetString( 1 );
 		const char *Title = LUA->GetString(2);
 		int flg = LUA->GetNumber(3);
